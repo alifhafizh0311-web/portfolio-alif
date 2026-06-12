@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 3%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  background: #ffffff;
+  color: #000000;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.main-list {
+  display: flex;
+  gap: 100px;
+}
+
+.list-item__link {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item__link::after {
+  position: absolute;
+  transition: 0.2s;
+  content: "";
+  border-radius: 10px;
+  width: 55%;
+  height: 3px;
+  bottom: -12px;
+  background: #000000;
+}
+
+.list-item__link:hover::after {
+  width: 100%;
+}
+
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/developer.png);
+  background-size: cover;
+  background-position: center bottom;
+  padding: 10vh 10vw 80vh 10vw;
+  gap: 20px;
+}
+
+.home__title {
+  letter-spacing: 0.15em;
+  font-size: 70px;
+  text-align: center;
+  color: #000000;
+  line-height: 1;
+}
+
+.home__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+  color: #444444;
+}
+
+
+.about {
+  margin-bottom: 200px;
+}
+
+.about__title {
+  font-size: 60px;
+  position: relative;
+  color: #000000;
+  width: fit-content;
+  margin-bottom: 60px;
+}
+
+.about__title::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 2px;
+  bottom: -13px;
+  background: #000000;
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block__text {
+  width: 40%;
+  line-height: 1.8;
+}
+
+.info-block__img {
+  align-self: center;
+}
+
+
+
+.skills {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.skills__title {
+  font-size: 60px;
+  position: relative;
+  color: #000000;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.skills__title::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 2px;
+  bottom: -13px;
+  background: #000000;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.skill__info {
+  width: 150px;
+}
+
+.skill__button {
+  font: inherit;
+  font-weight: 700;
+  color: #000000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.skill__button:hover {
+  color: #666666;
+}
+
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.project__img {
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.project__link {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.project__link::after {
+  position: absolute;
+  transition: 0.2s;
+  content: "";
+  width: 55%;
+  height: 3px;
+  bottom: -12px;
+  background: #000000;
+}
+
+.project__link:hover::after {
+  width: 100%;
+}
+
+
+
+.feedback {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.feedback__title {
+  font-size: 60px;
+  position: relative;
+  color: #000000;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.feedback__title::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 2px;
+  bottom: -13px;
+  background: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+}
+
+.form label {
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  font: inherit;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+  color: #000000;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.form__input::placeholder {
+  color: #777777;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
+
+.form__button {
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: #000000;
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form__button:hover {
+  background: #333333;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #e5e5e5;
+  color: #666666;
+}
