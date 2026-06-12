@@ -9,7 +9,11 @@ def index():
     button_html = False
     button_db = False
 
+    email = ""
+    text = ""
+
     if request.method == 'POST':
+
         if request.form.get('button_python'):
             button_python = True
 
@@ -21,6 +25,12 @@ def index():
 
         if request.form.get('button_db'):
             button_db = True
+
+        email = request.form.get('email')
+        text = request.form.get('text')
+
+        print("Email:", email)
+        print("Pesan:", text)
 
     return render_template(
         'index.html',
